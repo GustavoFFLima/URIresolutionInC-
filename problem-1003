@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace curso
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int A, B, SOMA;
+
+            A = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            B = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            
+           SOMA = A + B;
+            
+            Console.WriteLine("SOMA = " + SOMA.ToString(CultureInfo.InvariantCulture));
+        }
+    }
+}
