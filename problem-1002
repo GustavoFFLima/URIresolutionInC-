@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace curso
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double A, R;
+
+            R = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            
+            R = Math.Pow(R, 2);
+            A = 3.14159 * R;
+            
+            Console.WriteLine("A=" + A.ToString("F4", CultureInfo.InvariantCulture));
+        }
+    }
+}
